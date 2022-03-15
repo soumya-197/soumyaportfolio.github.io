@@ -1,0 +1,513 @@
+ @import 'utilities.css';
+ :root{
+     --black:#000000;
+     --silver:#C0C0C0;	
+     --gray:#808080;
+     --white:hsl(0, 0%, 100%);
+     --blue:#6495ED
+ }
+ body, html {
+    overflow-y: auto;
+ }
+ body{
+     height: 4000px;
+     font-family: 'Poppins',sans-serif;
+ }
+ html{
+     scroll-behavior: smooth;
+ }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:atialiased;
+}
+header{
+    background: var(--black);
+    clip-path: polygon(0 0,100% 0,100% 100%,70% 85%,0 100%);
+}
+.container{
+    max-width:1152px;
+    padding:0 15px;
+    margin:0 auto;
+}
+@media (min-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px){
+    .container{
+        max-width: 1152px;
+    }
+}
+header nav .right a{
+    color: var(--white);
+    text-decoration: none;
+}
+header nav .right a:hover{
+    color: var(--blue);
+}
+header nav .left a{
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+header nav .left a:hover{
+    color: var(--blue);
+}
+header nav .branding{
+    margin-right: 3rem;    
+}
+.hero{
+    padding: 8.5rem 0;
+}
+.hero .left img{
+    width: 400px;
+}
+.hero .right{
+    color: var(--white);
+}
+.hero .right h6{
+    font-size: 1.6rem;
+    color:var(--blue);
+    margin-bottom: 0.5rem;
+}
+.hero .right h1{
+    font-size: 4rem;
+    font-weight: 150;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.hero .right h1 span{
+    color: var(--blue);
+}
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+.hero .right{
+    margin-top: -7rem;
+}
+
+section 
+{
+    padding-right: 8rem 0;
+}
+section.about .about-me-img{
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    height: 450px;
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 400;
+}
+section.about h1 span{
+    color: var(--blue);
+}
+section.about h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    
+    font-weight: 400;
+}
+section.about p{
+    font-family: 'Lato' sans-serif;
+    font-size: 1rem;
+    color: var(--blue);
+    line-height: 1.8;
+}
+section.about .social{
+    display: flex;
+}
+
+.section-heading{
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 3rem;
+    line-height: 0.5;
+    font-size: 4rem;
+    
+}
+.section-heading span{
+    color: var(--blue);
+}
+.section-heading + p{
+    color: var(--black);
+    font-family: 'Lato',sans-serif;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+section.hobbies{
+    background: var(--silver);
+}
+section.hobbies .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+}
+section.hobbies .card-wrapper .card{
+    background: var(--white);
+    padding: 3rem 2rem;
+    padding-top: 6rem;
+    text-align: center;
+    transition: all .3s ease;
+    margin-bottom: 10rem;
+}
+section.hobbies .card-wrapper .card h2{
+    font-family: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+section.hobbies .card-wrapper .card p{
+    font-family:'Lato' sans-serif;
+    color:palevioletred;
+    line-height: 1.6;
+}
+section.hobbies .card-wrapper .card:hover{
+    background: var(--black);
+
+}
+section.hobbies .card-wrapper .card:hover h2{
+    color: var(--white);
+}
+section.skills{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/bg.jpg);
+    /* transparent bg  */
+    color: var(--white);
+    clip-path: polygon(0 0,100% 0,100% 100%,70% 71%,0 100%);
+    padding-bottom: 6rem;
+}
+section.skills h1{
+   
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    
+}
+section.skills p{
+    font-family: 'Lato',sans-serif;
+}
+section.myskills .section-heading{
+    font-size: 3rem;
+}
+
+section.myskills .slider .slide img{
+    margin-bottom: 1rem;
+    
+}
+section.myskills .slider .slide{
+    
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/sliderbg.png);
+   margin-left: 19rem;
+   margin-right: 19rem;
+   padding-top: 3rem;
+   padding-bottom: 2rem;
+}
+section.myskills .slider .slide span{
+    font-size: 1rem;
+    color: var(--white);
+    
+}
+section.myskills .slider-dots .dots{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+section.myskills .slider-dots{
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+section.myskills .slider-dots button{
+    font-size: 0;
+    width: 8px;
+    height: 5px;
+    margin-right: 0.3rem;
+    border: none;
+    outline: none;
+    background: var(--gray);
+    border-radius: 50px;
+    cursor: pointer;
+}
+section.myskills .dots li.slick-active button{
+    background: var(--blue);
+    width: 20px;
+}
+section.contact{
+    background: var(--silver);
+    padding: 4rem;
+}
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 0.1rem;
+    
+}
+section.contact .card-wrapper .card{
+    text-align: center;
+}
+section.contact .card-wrapper .card img{
+    margin-bottom: 3rem;
+}
+section.contact .card-wrapper .card h2{
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+section.contact .card-wrapper .card h6{
+    font-size: 1rem;
+    color: var(--blue);
+    margin-bottom: 4rem;
+}
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    margin-bottom: 2rem;
+}
+section.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+
+
+}
+section.contact input{
+    padding: 0.5rem;
+    border: 1px solid var(--blue);
+
+}
+section.contact .input-wrap-2 input{
+    margin-bottom: 2rem;
+    border: 1px solid var(--blue);
+  
+}
+section.contact .input-wrap-2 textarea{
+    padding: 0.5rem;
+    border: 1px solid var(--blue);
+}
+section.contact .btn-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+footer{
+    background: var(--black);
+    text-align: center;
+    padding: 3rem ;
+}
+
+.site-main-wrapper{
+    position: relative;
+}
+.hamberger{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+.hamberger img{
+    padding-top: 1.5rem;
+    width: 30px;
+}
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: var(--black);
+    width: 100%;
+    height: 100%;
+    padding: 2rem; 
+    padding-top: 5rem;
+    transform: translateX(-100%);
+    transition: all .5s ease-in-out;
+}
+.open{
+    transform: translateX(0);
+}
+.times{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+.times img{
+    width: 100px;
+    padding-top: 1.5rem;
+}
+.mobile-nav ul{
+    list-style-type: none;
+} 
+.mobile-nav ul li a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 2rem;
+}
+@media (max-width:1024px){
+    header #main-nav{
+        display: none;
+    }
+    .hamberger{
+        display: block;
+    }
+    .hero .left img{
+        width: 290px;
+    }
+    .hero .right h1{
+        font-size: 3rem;
+    }
+    .hero{
+        padding-top: 16.5rem;
+    }
+    section.about .about-me-img{
+        height: 310px;
+    }
+    section.about .social{
+        padding-bottom: 2rem;
+    }
+    .section-heading + p{
+        font-size: 1.7rem;
+    }
+    section.hobbies .card-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+    section.hobbies .card-wrapper .card{
+        margin-bottom: 2rem;
+        
+    }
+    section.skills h1{
+        font-size: 4rem;
+    }
+    section.skills p{
+        font-size: 1.7rem;
+    }
+    section.myskills .slider .slide{
+        margin-left: 19rem;
+    }
+    .slick-list{
+        margin-right: -15rem;
+        margin-left: -15rem;
+    }
+}
+@media (max-width:576px ){
+    .hero{
+        flex-direction: column;
+    }
+    header{
+        clip-path: polygon(0 0, 100% 0,100% 100%,69% 94%,0 100%);
+    }
+    .hero .right{
+        position: absolute;
+        top: 260px;
+        padding: 0 1rem;
+        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9));
+    }
+    .hero .left{
+        margin-top: -5rem;
+        margin-right: -9rem;
+        padding-bottom: 3rem;
+    }
+    .hero .right h6{
+        padding-top: 0rem;
+        font-size: 1rem;
+    }
+    .hero .right h1{
+        font-size: 2rem;
+        padding-bottom: 8rem;
+    }
+    .hero .right p{
+        font-size: 0.9rem;
+    }
+    .about-inner-wrap{
+        flex-direction: column;
+    }
+    .about .right{
+        text-align: center;
+        margin-top: -1rem;
+
+    }
+    .about .right .social{
+        justify-content: center;
+    }
+    section{
+        padding: 2rem 0;
+    }
+    section.hobbies .card-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section.skills p{
+        font-size: 1rem;
+        margin-top: -1rem;
+    }
+    section.skills h1{
+        font-size: 3rem;
+    }
+    section.skills{
+        clip-path: polygon(0 0,100% 0,100% 100%,70% 80%,0 100%);
+    }
+    .slick-list{
+        margin-right: -18rem;
+        margin-left: -18rem;
+    }
+    .section-heading{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .section-heading + p{
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    section.contact .card-wrapper{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 0;
+    }
+    section.contact .card-wrapper .card img{
+        margin-bottom: 1rem;
+    }
+    section.contact .card-wrapper .card h2{
+        margin-bottom: 0rem;
+    }
+    section.contact .input-wrap{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    section.contact .input-wrap-2 input{
+        margin-bottom: 1rem;
+    }
+    .times img{
+        width: 90px;
+    }
+    .mobile-nav ul li a{
+        font-size: 1.5rem;
+    }
+    footer img{
+        width: 300px;
+    }
+}

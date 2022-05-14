@@ -227,6 +227,13 @@ section.myskills .slider .slide span{
     color: var(--white);
     
 }
+section.myskills .slider .slide h1{
+    font-size: 2rem;
+    color: var(--white);
+}
+section.myskills .slider .slide a{
+    color: var(--white);
+}
 section.myskills .slider-dots .dots{
     list-style-type: none;
     display: flex;

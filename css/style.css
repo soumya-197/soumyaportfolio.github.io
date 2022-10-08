@@ -8,6 +8,7 @@
  }
  body, html {
     overflow-y: auto;
+    overflow-x: hidden;
  }
  body{
      height: 4000px;
@@ -25,6 +26,7 @@
 header{
     background: var(--black);
     clip-path: polygon(0 0,100% 0,100% 100%,70% 85%,0 100%);
+    padding-bottom: 3rem;
 }
 .container{
     max-width:1152px;
@@ -108,10 +110,7 @@ header nav .branding{
 .hero .right a:hover{
     color: var(--blue);
 }
-section 
-{
-    padding-right: 8rem 0;
-}
+
 section.about .about-me-img{
     margin-top: 3rem;
     margin-bottom: 4rem;
@@ -476,6 +475,7 @@ footer{
     }
     section.hobbies .card-wrapper{
         grid-template-columns: repeat(1, 1fr);
+        
     }
     section.skills p{
         font-size: 1rem;
@@ -508,6 +508,9 @@ footer{
     }
     section.contact .card-wrapper .card h2{
         margin-bottom: 0rem;
+    }
+    section.contact .card-wrapper .card h6{
+        font-size: 0.5rem;
     }
     section.contact .input-wrap{
         grid-template-columns: repeat(1, 1fr);

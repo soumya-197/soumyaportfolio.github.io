@@ -101,7 +101,13 @@ header nav .branding{
 .hero .right{
     margin-top: -7rem;
 }
-
+.hero .right a{
+    text-decoration: none;
+    color: white;
+}
+.hero .right a:hover{
+    color: var(--blue);
+}
 section 
 {
     padding-right: 8rem 0;
@@ -154,6 +160,8 @@ section.about .social{
 }
 section.hobbies{
     background: var(--silver);
+    padding: 3rem;
+    padding-bottom: 0rem;
 }
 section.hobbies .card-wrapper{
     display: grid;
@@ -261,6 +269,7 @@ section.myskills .dots li.slick-active button{
 section.contact{
     background: var(--silver);
     padding: 4rem;
+    padding-top: 1rem;
 }
 section.contact .card-wrapper{
     display: grid;
@@ -483,7 +492,7 @@ footer{
         margin-left: -18rem;
     }
     .section-heading{
-        font-size: 3rem;
+        font-size: 2rem;
         margin-bottom: 2rem;
     }
     .section-heading + p{

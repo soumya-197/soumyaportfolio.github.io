@@ -414,7 +414,12 @@ footer{
     }
     section.hobbies .card-wrapper .card{
         margin-bottom: 2rem;
-        
+    }
+    section.hobbies .card-wrapper .card h2{
+        font-size: 1.2rem;
+    }
+    section.hobbies .card-wrapper .card p{
+        font-size: 0.8rem;
     }
     section.skills h1{
         font-size: 4rem;
@@ -456,8 +461,8 @@ footer{
         font-size: 2rem;
         padding-bottom: 8rem;
     }
-    .hero .right p{
-        font-size: 0.9rem;
+    section .about{
+        padding:2rem;
     }
     .about-inner-wrap{
         flex-direction: column;
@@ -476,6 +481,9 @@ footer{
     section.hobbies .card-wrapper{
         grid-template-columns: repeat(1, 1fr);
         
+    }
+    section.hobbies .card-wrapper .card{
+        margin-left: -1.4rem;
     }
     section.skills p{
         font-size: 1rem;
